@@ -1,0 +1,46 @@
+<D0CTYPE>
+    <head>
+        <tittle style="text-align:center">Login</tittle>
+        <script type="text/javascript">
+        var saludo = "Hello World!";
+        var usuario_GET;
+        var usuario_PASS;
+        
+        function saludar(num)
+        {
+            alert(saludo+num);
+        }
+        function algo()
+        {
+            if(document.getElementById('txtUser').value=="" || document.getElementById('txtPass').value=="")
+                alert('Escriba un usuario y contraseña');
+            else
+                alert("Usuario: "+$('txtUser').value+"Contraseña: "+$('txtPass').value);
+        }
+        function $(id)
+        {
+            return document.getElementById(id);
+        }
+        
+        </script>
+    </head>
+    <body style="background-color:aquamarine">
+        <!--Cualquier cosa-->
+        <br>
+        <br>
+        <form action="" method="GET">
+            <label id="lblUser" for="txtUser">Usuario:</label>
+            <input type="text" id="txtUser" name="textUser" size="50" maxlength="5" value="USUARIOS">
+            <br>
+            <label id="lblPass" for="txtPass">Password:</label>
+            <input type="password" id="txtPass" name="password" size="32" maxlength="8">
+            <br>
+            <!--El atributo value no se muestra en navegador. Para program-->
+            <input type="checkbox" name="check" checked>
+            <br>
+            <input type="button" value="Enviar" onclick="algo()">
+            <input type="reset">
+        </form>
+        
+    </body>
+</D0CTYPE>
