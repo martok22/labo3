@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Padding agrega espacio en contenedores-->
+        <!--Box sizing hace que el espacio sea dentro del contenedor, no q agregue hacia afuera-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        nav{
+            padding-left: 0%;
+            width: 200px;
+            position: absolute;
+            border: 5px solid brown;
+            left: 0px;
+        }
+        footer{
+            bottom:0%;
+            position: fixed;
+            border: 5px solid black;
+            width: 100%;
+
+        }
+        .parrafo{
+            margin-left: 200px;
+            border: 5px solid #ffff00;
+            float:none;
+        }
+        section{
+            /*position:relative;
+            margin:auto;*/
+        }
+        div{
+            position:relative;
+            margin:auto;
+        }
+        .img{
+            float:right;
+            margin: 0 0 10px 30px;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        *{
+            /*-webkit-box-siing: border-box;
+            -moz-box-sizing: border-box;*/
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item5</li>
+                <li>Item4</li>
+            </ul>
+        </nav>
+        <section class="parrafo clearfix">
+            <!--Si lo pones abajo, cambia la posicion-->
+                <img class="img" src="http://www.elimparcial.com/Edicionenlinea/Fotos/Nacional/1527815-N.JPG">
+            Jean Fouquet (Tours, 1420-ibidem, 1481) es considerado uno de los grandes pintores del Renacimiento inicial y 
+                el renovador de la pintura francesa del siglo xv. Formado en la tradición francesa del gótico internacional, 
+                desarrolló un nuevo estilo integrando las fuertes tonalidades cromáticas del gótico, con la perspectiva y 
+                los volúmenes italianos, así como la innovación naturalista de los flamencos. Sus obras maestras son el Díptico 
+                de Melun y las miniaturas del Libro de horas de Étienne Chevalier.
+                    
+                Muy reconocido en su tiempo, después su obra quedó olvidada hasta su rehabilitación en el siglo xix por los románticos
+                franceses y alemanes, interesados en el arte medieval. Su obra se revalorizó definitivamente durante una exposición sobre
+                primitivos franceses, organizada en la Biblioteca Nacional de París en 1904, que permitió reunir y conocer su obra dispersa.
+               
+            </section>
+                
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </div>
+    <footer>
+        <p>Footer</p>
+
+    </footer>
+    
+</body>
+</html>
