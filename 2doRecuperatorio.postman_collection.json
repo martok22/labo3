@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "3f4499eb-d45e-44ea-b3ee-6445202a5fcf",
+		"name": "2doRecuperatorio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cargaHelado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "heladoCarga",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Menta",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Crema",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrarHelado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "borrarHelado",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "chocolate",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "agua",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mostrarImagenes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php?accion=mostrarImagenes&opcion=cargadas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "mostrarImagenes"
+						},
+						{
+							"key": "opcion",
+							"value": "cargadas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "altaVenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "altaVenta",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "juan@artazo",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "vainilla",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "crema",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "altaVentaConImagen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "altaVentaConImagen",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "cerez@",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "menta",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "crema",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultaHelado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:80/testeando/PPR.Gonzalez.Martin\\Nexo.php?sabor=Chocolate&tipo=crema&accion=consultarHelado",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"testeando",
+						"PPR.Gonzalez.Martin\\Nexo.php"
+					],
+					"query": [
+						{
+							"key": "sabor",
+							"value": "Chocolate"
+						},
+						{
+							"key": "tipo",
+							"value": "crema"
+						},
+						{
+							"key": "accion",
+							"value": "consultarHelado"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificarHelado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "modificarHelado",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "chocolate",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "agua",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "125",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "43",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tablaVentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php?accion=tablaVentas&mail=juan@artazo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "tablaVentas"
+						},
+						{
+							"key": "mail",
+							"value": "juan@artazo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "altaAlumno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "altaAlumno",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "OtroJorge",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "fala",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "asa@mail",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php?accion=Alumno&nombre=Martin&apellido=Gonzalez&mail=otro@gmail&clave=12345",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					],
+					"query": [
+						{
+							"key": "accion",
+							"value": "Alumno"
+						},
+						{
+							"key": "nombre",
+							"value": "Martin"
+						},
+						{
+							"key": "apellido",
+							"value": "Gonzalez"
+						},
+						{
+							"key": "mail",
+							"value": "otro@gmail"
+						},
+						{
+							"key": "clave",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accion",
+							"value": "loginUsuario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "otro@gmail",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "12345",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/PrimParSegundoRec.Gonzalez.Martin/Nexo.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PrimParSegundoRec.Gonzalez.Martin",
+						"Nexo.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
